@@ -1,0 +1,117 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: black;
+    color:antiquewhite;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.container {
+    margin: 2.5%;
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+}
+
+img {
+    height: 95vh; 
+    width: 100%; 
+    position: 40% 60%;
+}
+.right {
+    margin-left: 5%;
+    margin-top: 2.5%;  
+}
+/* Animation Staub & Stress */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    position: relative;
+    background: black; 
+    overflow: hidden;
+}
+
+section h1{
+    position: relative;
+    text-align: center;
+    color:rgb(233, 218, 4);
+    user-select: none;
+    font-size: 6.5rem;
+}
+
+
+section h1 span{
+    position: relative;
+    display: inline-block;
+}
+
+section h1 span.active{
+    animation: disappear 2s linear forwards;
+    transform-origin: bottom;
+}
+
+@keyframes disappear {
+
+    0%{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        color: #d74279;
+    }
+
+    50%{
+        opacity: 1;
+        pointer-events: none;
+        color: #15bae3;
+    }
+
+    100%{
+        opacity: 0;
+        filter: blur(20px);
+        transform: translateX(-300px) translateY(300px) rotate(360deg) scale(4); 
+        color: #ddf718;
+    
+    }
+}
+
+p {
+    font-size: 6rem; 
+    font-weight: bold;
+    color: black; 
+    margin-top: 20px; 
+}
+.hide {
+    display: none;
+}
+.vacation {
+    position: absolute;
+    height: 20vh; 
+    top: 35%; 
+    left: 40%; 
+    padding: 5px 80px; 
+    border-radius: 5px;
+    animation: 3s animateVacation linear infinite;    
+}
+@keyframes animateVacation {
+   0% {
+    background-color: #d74279;
+    }
+    50% {
+        
+        background-color: #15bae3;
+    }
+    80% {
+        background-color: #ddf718;
+    }
+    100% {
+        background-color: #ddf718;
+    }
+} 

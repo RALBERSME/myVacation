@@ -1,0 +1,107 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    overflow: hidden; 
+    background-color: black;
+}
+
+.container {
+    margin: 2.5% 1.5%; 
+    height: 75vh; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.pic {
+    margin: 5px auto; 
+    background-color: rgb(116, 136, 181);
+    height: 70vh; 
+    border: 5px solid black;
+    align-items: center;
+}
+
+marquee {
+    font-size: 2rem; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 15px; 
+}
+.content {
+    margin: 7.5%; 
+    padding: 15px; 
+    font-size: .9rem; 
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn {
+    padding: 12px 25px;
+    margin: 10px 250px;
+    border: none;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    cursor: pointer;
+
+  }
+  
+  .check {
+    background-color: transparent;
+    color: dodgerblue;
+    border: 2px dashed dodgerblue;
+    position: relative;
+  }
+  
+  .check::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: dodgerblue;
+    transition: width 0.3s ease;
+    z-index: -1;
+  }
+  
+  .check:hover::after {
+    width: 100%;
+  }
+  
+  .check:hover {
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #efb538; 
+  }
+  a:hover {
+    text-decoration:underline;
+  }
+  .hide {
+    display: none;
+  }
+  #tocontinue {
+  position: absolute;
+  top: 5px; 
+  left: 33%; 
+  border-color: yellow; 
+  color: yellow;
+  animation: 2s changeColor linear infinite; 
+  }
+
+  @keyframes changeColor {
+    from {
+        color: yellow; 
+        border-color: yellow; 
+    }
+    to {
+        color: white; 
+        border-color: dodgerblue; 
+    }
+  }

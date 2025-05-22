@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="boarding.css" />
+    <title>Boarding</title>
+  </head>
+  <body>
+    <button
+      id="tocontinue"
+      class="btn check hide"
+      onclick="window.location.href='argentina.html'"
+    >
+      <span>Continue</span>
+    </button>
+    <div class="container">
+      <div class="pic">
+        <img
+          width="100%"
+          height="400px"
+          src="https://cdn.pixabay.com/photo/2015/03/15/20/56/welcome-675017_640.jpg"
+        />
+        <div class="content">
+          <marquee>Only for diplomats, security and secret services. </marquee>
+          <h2 id="message1">
+            Security checks and customs are not necessary. Please simply leave
+            drugs, weapons, and bribes in your suitcases to ensure a speedy
+            departure.
+          </h2>
+          <br />
+        </div>
+        <button class="btn check" onclick="enter1()">
+          <span>Check in</span>
+        </button>
+      </div>
+      <div class="pic">
+        <img
+          width="100%"
+          height="400px"
+          src="https://cdn.pixabay.com/photo/2014/10/29/22/00/staircase-508627_640.jpg"
+        />
+        <div class="content">
+          <marquee
+            >Passengers from the United States please take these stairs.
+          </marquee>
+          <h2 id="message2">
+            Click here for security check, customs and embarking. Please have
+            your identification documents ready.
+          </h2>
+          <br />
+        </div>
+        <button id="btnUS" class="btn check" onclick="enter2()">
+          <span>Check in</span>
+        </button>
+      </div>
+      <div class="pic">
+        <img
+          width="100%"
+          height="400px"
+          src="https://cdn.pixabay.com/photo/2022/08/09/16/11/canal-7375355_640.jpg"
+        />
+        <div class="content">
+          <marquee
+            >Passengers from the European Union please wait at the jetty.
+          </marquee>
+          <h2 id="message3">
+            Click here for security check, customs and embarking. Please have
+            your identification documents ready.
+          </h2>
+          <br />
+        </div>
+        <button id="btnSE" class="btn check" onclick="enter3()">
+          <span>Check in</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="boarding.js"></script>
+  </body>
+</html>
