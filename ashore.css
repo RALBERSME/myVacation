@@ -1,0 +1,79 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    background-image: url("Images/koffer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
+    overflow: hidden;
+}
+
+.container {
+    margin:5%; 
+    height: 90vh; 
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size: 4rem; 
+    color: rgb(6, 67, 101); 
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+                  2px 2px 0 #fff, -3px 0px 0 #fff, 3px 0px 0 #fff,
+                  0px -3px 0 #fff, 0px 3px 0 #fff;
+                  
+}
+.argentina {
+ position: absolute;
+ top: -1%; 
+ left: 5%; 
+ animation: turnArgentina 2s linear infinite;
+ transform: rotateX(0deg); 
+}
+
+@keyframes turnArgentina {
+  0% {
+    transform: rotateX(0deg); 
+   }
+  25% {
+    transform: rotateX(180deg); 
+   }
+   50% {
+    transform: rotateX(0deg); 
+   }
+   100% {
+    transform: rotateX(0deg); 
+   }
+}
+img {
+    height: 550px; 
+}
+#seagull {
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    height: 250px; 
+    width: 350px; 
+    animation-delay: 1s;
+    animation-name: seagullFly;
+    animation-duration: 6s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+}
+
+@keyframes seagullFly {
+from {
+    top: 100%; 
+    left: 0; 
+}
+to {
+    top: 0%; 
+    left: 100%; 
+}
+
+}
