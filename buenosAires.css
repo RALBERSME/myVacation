@@ -1,0 +1,91 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.6;
+  padding: 20px 0px;
+  background-color: whitesmoke;;
+ background-image: url("Images/argentina-1460299_640.jpg"); 
+ background-size: cover;
+ }
+.intro {
+  margin: 2%; 
+  color:whitesmoke; 
+}
+.outro {
+  display: grid; 
+  grid-template-columns: 2fr 1fr 2fr;
+}
+.outro h3 {
+  margin: 2%; 
+  font-size: 1.2rem; 
+}
+#yellow {
+   animation: changeColor 4s linear infinite; 
+}
+
+@keyframes changeColor {
+  0% {
+    color: dodgerblue;
+  }
+  25% {
+    color: dodgerblue;
+  }
+  49% {
+    color: orangered
+  }
+  89% {
+    color: orangered
+  }
+  100% {
+    color: dodgerblue;
+  }
+}
+.marquee-wrapper {
+  max-width: 90%; 
+  margin: 0 auto;
+}
+
+.image-marquee {
+  margin-bottom: 60px;
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: whitesmoke;;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: height 0.3s ease;
+}
+
+.marquee-track {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.marquee-item {
+  flex: none;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.marquee-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s ease;
+}
