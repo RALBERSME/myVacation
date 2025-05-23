@@ -16,7 +16,7 @@ allSpans.forEach(span=>{
                         
         setTimeout(() => {            
              window.location.href="boarding.html";
-        }, 6000)    
+        }, 4000)    
         }
     });
 
