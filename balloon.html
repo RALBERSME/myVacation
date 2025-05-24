@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="balloon.css" />
+    <title>Up and away in the balloon</title>
+  </head>
+  <body>
+    <div id="message" class="message">Choose your own travel destinations.</div>
+    <div class="wrapper">
+      <div class="containerLeft"></div>
+      <div class="containerRight">
+        <h2>
+          Grab the cards wherever you want and push them onto the balloon.<br />When
+          you are finished, press the black confirm button.
+        </h2>
+        <br />
+        <div class="containerDrag">
+          <div class="box one" draggable="true">
+            <span id="iguazu">Iguazu</span>
+          </div>
+          <div class="box two" draggable="true">
+            <span id="patagonia">Patagonia</span>
+          </div>
+          <div class="box three" draggable="true">
+            <span id="tierraDelFuego">Tierra Del Fuego</span>
+          </div>
+          <div class="box four" draggable="true">
+            <span id="gaucholand">Gauchos</span>
+          </div>
+          <div class="box five" draggable="true">
+            <span id="dtStadt">dt. Stadt</span>
+          </div>
+          <br />
+          <button
+            class="button"
+            onclick="checkItems()"
+            style="vertical-align: middle"
+          >
+            <span>Confirm selection</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="balloon.js"></script>
+  </body>
+</html>

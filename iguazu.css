@@ -1,0 +1,103 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+ body {
+    height: 100vh; 
+    background: linear-gradient(to right bottom, rgb(168, 206, 244), white 40%, rgb(97, 175, 253) 65%, dodgerblue 100%)
+ }
+
+ .container {
+    margin: 2.5%; 
+    margin-bottom: 0; 
+ }
+ .images {
+    display: flex;
+    gap: 5px; 
+   overflow: hidden;
+   border-top-left-radius: 5px;
+   filter: drop-shadow(30px 10px 8px dodgerblue);
+ }
+
+ .waterfalls {
+    display: flex;
+ }
+.middle {
+    width: 30%; 
+    text-align: center;
+    padding-left: 120px; 
+ }
+
+ .left {
+    margin-top: 25px; 
+    width: 30%; 
+    padding-left: 5%; 
+    font-size: .8rem; 
+ }
+ .left a {
+    text-decoration: none;
+    font-size: 1.5em; 
+    color: green; 
+    font-weight: bold;
+ }
+ .left a:hover {
+    color: rgb(0, 23, 128); 
+ }
+ .right {
+    width: 35%; 
+    margin-left: 2.5%; 
+    background: url("https://cdn.pixabay.com/photo/2014/04/02/14/04/sky-306067_640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .fisherman {
+    position: absolute;
+    top: 60%; 
+    left: 25%; 
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    animation: joy 6s ease-out infinite; 
+ }
+
+ @keyframes joy {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-10deg);
+    }
+    30% {
+        transform: rotateY(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    55% {
+        transform: rotateY(180deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotateY(10deg);
+    }
+    95% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+ }
+
+ #continue {
+    padding: 5px 10px; 
+    background-color: dodgerblue;
+    color: yellow; 
+    border-radius: 5px;
+ }
+ #continue:hover {
+    color: orangered;
+    background-color: rgb(249, 208, 131); 
+    border: 2px solid orangered; 
+ }

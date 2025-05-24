@@ -1,0 +1,144 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body { height: 100vh}
+
+.message {
+    position: absolute;
+    color: black; 
+    font-size: 2rem;
+    top: 5%; left: 7.5%; 
+}
+.wrapper {
+    display: flex;
+    margin: 2%; 
+}
+.containerLeft {
+    height: 80vh;
+    width: 80vw;  
+    margin: 5%; 
+    background: url("Images/hot-air-balloon-630793_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.containerRight{
+    height:80vh; 
+    width: 20vw;
+    margin: 5% auto;
+   
+}
+
+.box{
+    width: 17vw;
+    height: 10vh;
+    cursor: move;
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: white;      
+    transition: background-color 0.3s ease-in-out;
+}
+
+.box span {
+    font-size:2rem;
+    padding: 25px 40px;  
+}
+
+.one{
+    background-color: #3498db;  
+   
+    
+}
+.one:hover {
+    background: url("Images/iguazu-falls-1461857_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 330px 100px;
+    color: yellow; 
+}
+.two{
+    background-color: rgb(6, 63, 120); 
+    
+}
+
+.two:hover {
+    background: url("https://cdn.pixabay.com/photo/2020/07/16/14/51/glacier-5411156_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 330px 100px;
+    color: yellow; 
+    
+}
+.three {
+    background-color: #e74c3c; 
+   
+  }
+.three:hover {
+    background: url("https://cdn.pixabay.com/photo/2014/08/27/12/58/emperor-penguins-429128_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 330px 100px;
+    color: yellow; 
+}
+  .four {
+    background-color: #9e1809;
+  }
+  
+  .four:hover {
+    background: url("https://cdn.pixabay.com/photo/2019/12/16/22/30/aysen-4700415_640.jpg");
+    background-repeat: no-repeat;
+    background-size: 330px 100px;
+    color: yellow; 
+  }
+  .five {
+    background-color: goldenrod; 
+  }
+  
+  .five:hover {
+    background: url("https://cdn.pixabay.com/photo/2024/04/29/15/41/clock-8728261_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: 330px 100px;
+    color: yellow; 
+  }
+
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: yellow;
+    text-align: center;
+    font-size: 28px;
+    width: 17vw;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\01F44F';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -50px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 35px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
