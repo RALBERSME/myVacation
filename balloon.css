@@ -10,6 +10,7 @@ body { height: 100vh}
     position: absolute;
     color: black; 
     font-size: 2rem;
+    font-weight: bold;
     top: 5%; left: 7.5%; 
 }
 .wrapper {
