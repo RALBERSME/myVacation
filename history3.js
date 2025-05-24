@@ -1,0 +1,44 @@
+const scrollContainer = document.querySelector("main");
+
+scrollContainer.addEventListener("wheel", (evt) => {
+  evt.preventDefault();
+  scrollContainer.scrollLeft += evt.deltaY;
+  console.log(evt.deltaY);
+});
+
+const chosenText = 
+"Juan Domingo Perón was one of the most important figures in Argentine history. He first came to power in 1946 and shaped the country significantly for many years. His rise to power began during World War II while serving in the military. After the war, he took advantage of popular discontent and political instability to distinguish himself as a leader of the labor movement. In 1946, he was elected President of Argentina. He gained his popularity primarily through social reforms that benefited workers and nationalist policies designed to strengthen Argentina's independence. During his term in office, Perón implemented a number of significant measures. He emphasized social justice, improved working conditions, introduced pensions and social benefits, and promoted industry. His policies became known as Peronism, a blend of socialism, nationalism, and populism. He also supported culture, promoting Argentine music, literature, and sports, which strengthened national self-confidence. But Perón's reign was not only marked by positive changes. His authoritarian approach to controlling the media and the repression of political opponents led to tensions within the country. His close collaboration with fascist regimes in Europe was also criticized. His policies also led to economic problems, as government spending increased and inflation rose. In 1952, Perón was elected for a third time, but his rule became increasingly unsettled. In 1955, a military coup forced him into exile. Perón was forced to flee to Spain, where he initially lived in exile. Despite his absence, he remained a central figure in Argentine politics. He supported political movements in Argentina from outside and tried to mobilize his supporters. He returned to Argentina in 1973 after being re-elected president. His return was celebrated by many as a liberation. However, his second term was marked by political tensions and economic difficulties. Perón died on July 1, 1974, at the age of 78. After his death, his third wife, Isabel Perón, assumed the presidency, but the political situation remained unstable. Perón's influence on Argentina is still felt today. His policies had a lasting impact on the Argentine economy, culture, and society. Peronism has remained an important political movement that emphasizes both social justice and national independence. Peron's character was characterized by charm, assertiveness, and a strong connection to the workers. Despite his controversial policies, Juan Domingo Perón remains a central figure in Argentine history whose influence continues to resonate. Scroll to the next page. Evita Perón was born into a poor family in Argentina on May 7, 1919. She grew up in a difficult environment and moved to Buenos Aires at a young age to pursue a career as an actress. There she met Juan Domingo Perón, the future president of Argentina, whom she married in 1945. Through her relationship with Perón, she quickly became a well-known figure and passionately committed to helping Argentina's poor and disadvantaged. Evita became particularly famous for her work in the labor movement and her support of social projects. She campaigned for women's rights and social justice and became a symbol of Peronism. Her popularity grew enormously, and she was revered by many Argentines. The song Don't Cry for Me, Argentina, recorded by the Argentine singer Mercedes Sosa in 1976, became particularly well-known. The song expressed people's admiration and pride in Evita, but also her willingness to sacrifice and her influence on the country. For Argentines at the time, it represented a memory of a woman who had stood up for the poor and who had a strong emotional connection to her people. Today, the song remains a symbol of Evita's legacy and the hope for social justice. It commemorates her role as a champion of the less fortunate and the deep emotions she evoked in many Argentines. Evita Perón remains a legendary figure who continues to play a significant role in Argentine culture and history. Scroll to the next page. After the death of Juan Domingo Perón in 1974, his third wife, Isabel Perón, assumed the presidency. Her term was marked by political tensions, economic problems, and increasing instability. In 1976, a military coup ushered in a dictatorship that lasted until 1983. During this period, human rights were severely violated, opposition members were persecuted, and the economy suffered from inflation and mismanagement. In 1983, democracy returned to Argentina, and Raúl Alfonsín became president. He worked to address human rights violations and implemented democratic reforms. However, the economic situation remained difficult, with high inflation and unemployment. In the 1990s, Carlos Menem came to power. He pursued neoliberal economic policies, implemented privatizations, and initially stabilized the economy. However, this also led to social inequalities and economic crises. In 2001, Argentina experienced a severe economic crisis, which led to mass protests and political instability. This was followed by several presidential changes in a short period of time. In 2003, Néstor Kirchner became president, followed by his wife, Cristina Fernández de Kirchner, who remained in office until 2015. During her term in office, she attempted to strengthen social programs and stabilize the economy, but she too had to contend with economic challenges and allegations of corruption. Mauricio Macri has been president since 2015, and he sought economic liberalization and reforms. However, his policies led to a renewed economic crisis, and in 2019, Alberto Fernández was elected president, with Cristina Fernández as vice president. The current situation is characterized by economic difficulties, inflation, and social tensions, but also by efforts to restore stability. Overall, Argentina's history since Perón's abdication has been marked by political upheaval, economic crises, and the struggle for democracy and social justice. The country has repeatedly experienced phases of boom and crisis, but remains an important nation in South America with a rich culture and history. Scroll to the next page. On December 10, 2023, Milei became the new president with the goal of reforming Argentina. At the beginning of his term, Milei announced a shock therapy economic reform. He presented three reform packages: a ten-point plan, an emergency decree with 366 articles, and a legislative package for a state of emergency until 2025. The ten-point plan included a devaluation of the peso, spending cuts, privatizations, and pension reforms. He tightened security and immigration policies, deployed the military domestically, and restricted the right to demonstrate. In foreign policy, he stopped Argentina's accession to the BRICS and announced his withdrawal from the WHO. Protests and general strikes against the austerity measures led to nationwide unrest. Milei later scaled back some reform plans, but the courts overturned parts of his labor market reforms. In 2024, GDP fell by 1.8%, while the economy showed a slight recovery in the third quarter. Despite criticism, more than half of the population still rated his government positively. As an interim report from early 2025, one can conclude: Javier Milei is recording initial economic successes in Argentina, including falling inflation, declining poverty, and a budget surplus. His austerity measures have led to job cuts in the public sector, but wages are rising faster than inflation. Argentina has also become a net energy exporter with a trade surplus. However, there has been criticism over a cryptocurrency scandal and his conservative social policies. Despite challenges, his party remains relatively strong with 36% approval."
+
+const synth = window.speechSynthesis;
+const utterance = new SpeechSynthesisUtterance(chosenText + window.getSelection());
+
+utterance.lang = "en-US";
+
+function readAloud4() {
+  synth.speak(utterance);
+}
+
+// const utterance5 = new SpeechSynthesisUtterance(chosenText1 + window.getSelection());
+// const utterance6 = new SpeechSynthesisUtterance(chosenText2 + window.getSelection());
+// const utterance7 = new SpeechSynthesisUtterance(chosenText3 + window.getSelection());
+
+// utterance.lang = "en-US";
+// function readAloud5() {
+//   synth.speak(utterance5);
+// }
+// utterance.lang = "en-US";
+// function readAloud6() {
+//   synth.speak(utterance6);
+// }
+// utterance.lang = "en-US";
+// function readAloud7() {
+//   synth.speak(utterance7);
+// }
+function stopReading1() {
+  synth.cancel(); 
+}
+
+document.getElementById("continue").addEventListener("click", () => {
+  window.location.href='cityLife.html';
+})
+

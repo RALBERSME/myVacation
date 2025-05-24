@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --s: 84px; 
+  --c1: #ffd7fb;
+  --c2: #fcffea;
+  --c3: #e4e4e4;
+  
+  --_g: 0 120deg,#0000 0;
+}
+
+main {
+  overflow-x: hidden;
+  display: flex;
+}
+
+h1 {
+
+}
+
+section {
+  min-width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+section:nth-child(odd) {
+     background:
+      conic-gradient(             at calc(250%/3) calc(100%/3),var(--c3) var(--_g)),
+      conic-gradient(from -120deg at calc( 50%/3) calc(100%/3),var(--c2) var(--_g)),
+      conic-gradient(from  120deg at calc(100%/3) calc(250%/3),var(--c1) var(--_g)),
+      conic-gradient(from  120deg at calc(200%/3) calc(250%/3),var(--c1) var(--_g)),
+      conic-gradient(from -180deg at calc(100%/3) 50%,var(--c2)  60deg,var(--c1) var(--_g)),
+      conic-gradient(from   60deg at calc(200%/3) 50%,var(--c1)  60deg,var(--c3) var(--_g)),
+      conic-gradient(from  -60deg at 50% calc(100%/3),var(--c1) 120deg,var(--c2) 0 240deg,var(--c3) 0);
+    background-size: calc(var(--s)*sqrt(3)) var(--s);
+  }
+    
+ 
+section:nth-child(even) {
+ background-image: url("https://cdn.pixabay.com/photo/2024/02/29/15/57/tango-8604729_640.png");
+ background-repeat: no-repeat;
+ background-size: cover;
+  color: white;
+}
+.sectionLayer {
+  height: 100vh; 
+  background-color: rgba(0,0,0,0.5);
+}
+.page1, .page2, .page3, .page4 {
+  margin-top: 5%; 
+  display: flex;
+  flex-direction: column;
+  padding: 5%;   
+  color: whitesmoke;
+}
+.buttons {
+  display: flex;
+  gap: 15px; 
+}
+.btnVorlesen {
+  padding: 10px 15px; 
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif
+}
+button {
+  box-shadow: 10px 5px 5px rgba(0,0,0,0.6);
+  background-color: rgb(251, 218, 223);
+  border-radius: 5px; 
+  border: white; font-family: Arial, Helvetica, sans-serif
+}
+button:hover {
+  box-shadow: 5px 2px 2px rgba(0,0,0,0.3);
+  transform: translateX(3px);
+  background-color: rgb(186, 162, 165);
+  color: whitesmoke; 
+}
+
+button a {
+  text-decoration: none;
+  color: black; 
+}
+button a:hover {
+  color: whitesmoke; 
+}
+#continue {
+  background-color: rgb(254, 175, 187);
+  font-weight: bold;
+}
+#continue:hover {
+  border: 5px solid rgb(254, 175, 187);;
+  background-color:white ;
+  font-weight: bold;
+ }
+ #continue a:hover {
+  color: black; 
+  font-size: 1rem;
+ }
