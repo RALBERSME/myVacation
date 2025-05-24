@@ -83,7 +83,7 @@
     transform: translate(-50% -50%); 
     padding: 15px 20px 15px 15px; 
   }
- #btn:hover,
+ #btn:hover, 
  #btn:focus {
     background: burlywood;
   }
@@ -117,4 +117,11 @@
   .hide {
     display: none;
   }
-  
+  #englishInfo {
+    width: 150px !important; 
+    background: linear-gradient(to right top,  rgb(168, 84, 96), rgb(248, 220, 225) 50%,rgb(228, 140, 153) 52% );
+  }
+  #englishInfo:hover {
+    background: burlywood;
+    cursor: pointer;
+  }

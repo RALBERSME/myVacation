@@ -19,6 +19,7 @@ body {
   font-size: 1.2rem; 
 }
 #yellow {
+  font-size: 1.3rem; 
    animation: changeColor 4s linear infinite; 
 }
 
