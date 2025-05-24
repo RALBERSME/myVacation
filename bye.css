@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    height: 100vh;
+    background: url("https://cdn.pixabay.com/photo/2020/06/21/05/09/argentina-5323216_640.png"); 
+    background-size: 10%;
+    background-repeat: repeat;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  darkblue; 
+  }
+ .wrapper {
+    margin: 2.5% 5%; 
+    background-color:rgb(116, 172, 223); 
+    background-color: rgba(166,172,223,1);
+    opacity: 0.98;
+    background: radial-gradient(circle, transparent 20%, rgba(166,172,223,1) 20%, rgba(166,172,223,1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgba(166,172,223,1) 20%, rgba(166,172,223,1) 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#c0c1cf 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #c0c1cf 2px, rgba(166,172,223,1) 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    height: 90vh;
+    padding: 1.5% 5%;  
+    font-size: 12.5px;  
+    border-radius: 5px;  
+ }
+ .wrapper h1, .wrapper h2 {
+    width: 40%; 
+ }
+ a {
+    text-decoration: none;
+    margin-top: 15px; 
+    font-size: 20px; 
+    font-weight: bold;
+    color:rgb(252, 201, 91)
+ }
+ a:hover {
+    color:rgb(234, 161, 3)
+ }
+  .container {
+    position: absolute;
+    top: 48%;
+    left: 45%; 
+    height: 40%; 
+    width: 25%; 
+
+    }
+  .container1 {
+    width: 80%; 
+    font-size: 12.5px; 
+  }
+  .envelope {
+    position: relative;
+    background: rgb( 255, 184, 28);
+    height: 30vmin;
+    width: 48vmin;
+  }
+  .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 245, 230);
+    height: 25vmin;
+    width: 45vmin;   
+    left: 2.5%;
+    top: 0;
+    animation: slideEnv 0.2s ease-out;
+  }
+  .letters {
+    position: absolute;
+    top: 25px;
+    font-family: "Love Light", cursive;
+    font-weight: 600;
+    font-size:1.75rem;     
+  }
+  .cover {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-bottom: 15vmin solid rgb(252, 201, 91);
+    border-left: 24vmin solid transparent;
+    border-right: 24vmin solid transparent;
+    top: 15vmin;
+    z-index: 3;
+  }
+  .cover::after {
+    position: absolute;
+    content: "";
+    border-left: 24.5vmin solid rgb(235, 197, 116);
+    border-bottom: 15vmin solid transparent;
+    border-top: 15vmin solid transparent;
+    top: -15vmin;
+    left: -24vmin;
+  }
+  .cover::before {
+    position: absolute;
+    content: "";
+    border-right: 24.5vmin solid rgb(235, 197, 116);
+    border-bottom: 15vmin solid transparent;
+    border-top: 15vmin solid transparent;
+    top: -15vmin;
+    left: -0.5vmin;
+  }
+  .upper {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-top: 15vmin solid rgb( 255, 184, 28);
+    border-left: 24vmin solid transparent;
+    border-right: 24vmin solid transparent;
+    top: 0;
+    transform-origin: top;
+    animation: openEnv 2s;
+  }
+  .container:hover .upper {
+    animation: open 0.5s;
+    animation-fill-mode: forwards;
+  }
+  .container:hover .card {
+    animation: sliding 0.2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+ 
+  @keyframes open {
+    100% {
+      transform: rotatex(180deg);
+    }
+  }
+  @keyframes sliding {
+    100% {
+      transform: translatey(-15vmin);
+      z-index: 2;
+    }
+  }
+  @keyframes openEnv {
+    from {
+      transform: rotatex(-180deg);
+    }
+  }
+  @keyframes slideEnv {
+    from {
+      transform: translatey(-15vmin);
+    }
+  }
+  
+  .differences {
+    position: absolute;
+    top: 10%; 
+    left: 85%; 
+    font-size: 15px; 
+    width: 150px; 
+    padding: 5px; 
+    z-index: 11; 
+    height: 187px; 
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2; 
+   
+  }
+  .differences:hover {
+    background-color: white;
+    left: 25%; 
+    width: 1500px;
+    padding: 3% 5%; 
+    font-size: 14px;
+    height: 85%; 
+    opacity: 1;
+    z-index: 20; 
+  }
+  .stamp {
+    position: absolute;
+    width: 200px; 
+    height: 150px; 
+    top: 10%; 
+    left: 80%; 
+    background: url("https://cdn.pixabay.com/photo/2016/03/31/15/39/bluenose-1293452_640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1; 
+  }
+  .disclaimer {
+    position: absolute;
+    top: 70%; 
+    left: 10%; 
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px; 
+  }
+  .links a{
+    margin:0; 
+    padding:0; 
+  }

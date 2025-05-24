@@ -13,8 +13,8 @@ body {
   background-color: black;
   overflow: hidden;
   background-color: #28282a;
-opacity: 0.98;
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #28282a 10px ), repeating-linear-gradient( #bbbdcf55, #bbbdcf );
+  opacity: 0.98;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #28282a 10px ), repeating-linear-gradient( #bbbdcf55, #bbbdcf );
 }
 .bg-spotlight {
   height: inherit;
