@@ -76,7 +76,7 @@ function checkItems() {
         let grammatKorrekt = reiseziele.replaceAll(",", " und "); 
         let message = document.getElementById("message")
         message.style.color = "green"; 
-        message.innerHTML = `Super! Auf geht's nach ${grammatKorrekt}. Leinen los!`; 
+        message.innerHTML = `Great! Let's fly to ${grammatKorrekt}. Cast off!`; 
         setTimeout(() => {
             window.location.href = `${goals[0]}.html`
         }, 2500)}
