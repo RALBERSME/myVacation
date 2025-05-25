@@ -37,10 +37,10 @@
     margin-top: 15px; 
     font-size: 20px; 
     font-weight: bold;
-    color:rgb(252, 201, 91)
+    color:rgb(110, 76, 2); 
  }
- a:hover {
-    color:rgb(234, 161, 3)
+ a:hover { 
+    color:rgb( 255, 184, 28);
  }
   .container {
     position: absolute;
