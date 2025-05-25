@@ -65,7 +65,7 @@ a {
 #outside {
   width: 100%;
   height: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2020/04/28/14/15/porthole-5104676_640.png");
+  background-image: url("Images/luke.png");
   background-position: 70% 30%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,7 +103,7 @@ a {
 }
 
 #textRight {
-  width: 80%;
+  width: 101%;
   height: 30%;
   display: flex;
   justify-content: end;

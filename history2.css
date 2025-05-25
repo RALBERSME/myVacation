@@ -5,18 +5,13 @@ body {
   --s: 84px; 
   --c1: #ffd7fb;
   --c2: #fcffea;
-  --c3: #e4e4e4;
-  
+  --c3: #e4e4e4;  
   --_g: 0 120deg,#0000 0;
 }
 
 main {
   overflow-x: hidden;
   display: flex;
-}
-
-h1 {
-
 }
 
 section {
@@ -42,7 +37,7 @@ section:nth-child(odd) {
     
  
 section:nth-child(even) {
- background-image: url("https://cdn.pixabay.com/photo/2024/02/29/15/57/tango-8604729_640.png");
+ background-image: url("Images/tangoDancer.png");
  background-repeat: no-repeat;
  background-size: cover;
   color: white;

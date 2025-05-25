@@ -7,7 +7,7 @@
  
   body {
     height: 100vh;
-    background: url("https://cdn.pixabay.com/photo/2020/06/21/05/09/argentina-5323216_640.png"); 
+    background: url("Images/argentinaMap.png"); 
     background-size: 10%;
     background-repeat: repeat;
     font-family:Georgia, 'Times New Roman', Times, serif; 
@@ -181,7 +181,7 @@
     height: 150px; 
     top: 10%; 
     left: 80%; 
-    background: url("https://cdn.pixabay.com/photo/2016/03/31/15/39/bluenose-1293452_640.png");
+    background: url("Images/stamp.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1; 

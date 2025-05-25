@@ -116,19 +116,19 @@ body {
   position: absolute;
   height: 100vh; 
   color: white; 
-  top: -80%; 
+  top: -100px; 
   left: -75%;
   width: 50%; 
-  font-size: 1.1rem; 
+  font-size: 1.3rem; 
 }
 .culture2 {
   position: absolute;
   height: 80vh; 
   color: white; 
-  top: -10%; 
+  top: -50px; 
   right: -35%;
   width: 50%; 
-  font-size: 1.1rem; 
+  font-size: 1.2rem; 
 }
 h2 {
   font-family: "Love Light", cursive;

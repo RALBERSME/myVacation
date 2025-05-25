@@ -11,7 +11,7 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     color: white;
     font-size: 1rem; 
-    background: url("https://cdn.pixabay.com/photo/2020/03/29/20/11/flowers-4982129_640.jpg");
+    background: url("Images/flowersBackground.jpg");
   } 
   .container {
     position: relative;

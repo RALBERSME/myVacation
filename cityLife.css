@@ -5,7 +5,7 @@
 }
 body {
     height: 100vh; 
-    overflow: hidden;background-image: url("https://cdn.pixabay.com/photo/2022/06/23/17/13/ball-7280265_640.jpg");
+    overflow: hidden;background-image: url("Images/backgroundBlue.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     color: white; 

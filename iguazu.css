@@ -47,7 +47,7 @@
  .right {
     width: 35%; 
     margin-left: 2.5%; 
-    background: url("https://cdn.pixabay.com/photo/2014/04/02/14/04/sky-306067_640.png");
+    background: url("Images/skyBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
  }
