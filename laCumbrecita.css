@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    margin: 2.5%; 
+    height: 90vh; 
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.main {
+    background: url("https://cdn.pixabay.com/photo/2023/11/16/21/57/woman-8393185_640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+.links {
+    margin-left: 25px; 
+}
+h1 {
+    font-family: "Poetsen One", sans-serif;
+}
+h2 {
+   width: 50%; 
+   text-align: center;
+   padding-left: 100px; 
+}
+li {
+    list-style: none;
+    margin-bottom: 15px; 
+    background-color: blanchedalmond;
+    border: none; 
+    border-radius: 5px; 
+}
+
+li a {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.5rem; 
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(247, 198, 125);
+}
+#continue {
+    font-weight: bold;
+    color: darkblue; 
+}
