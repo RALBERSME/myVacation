@@ -69,14 +69,14 @@ h2 {
 }
 .puma {
     position: absolute;
-    bottom: 5%;  
-    left: 76%; 
+    bottom: 1.5%;  
+    left: 74%; 
 }
 .kormoran {
     position: absolute;
     bottom: 5%;  
     left: 85%; 
-  }
+    }
 
 #selfie {
     position: absolute;
