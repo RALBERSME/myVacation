@@ -1,0 +1,145 @@
+* {
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+body {
+    height: 100vh; 
+    background: url("Images/patagonia-5173688_640.jpg");
+    background-repeat: no-repeat;
+    background-size:50%;
+    background-position: 50% 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    width: 22%; 
+    padding-left: 25px; 
+    margin-top: 1%; 
+}
+
+.rightSide {
+    position: absolute;
+    top: 5%; 
+    left: 80%; 
+    width: 22%; 
+    height: 80vh; 
+}
+h2 {
+    font-size: 20px; 
+}
+.albatross {
+    position: absolute;
+    top: 10%; 
+    left: -5%;
+    animation: flyingAlbatross 6s ease infinite;  
+}
+
+@keyframes flyingAlbatross {
+    from {
+        top: 10%; 
+        left: 35;
+        transform: translateY(0);
+    }
+    to  {
+        top: -5%; 
+        left: 55%;
+        transform: translateY(-200px);
+    }
+}
+.lama {
+    position: absolute;
+    top: 15%; 
+    left: 35;
+    animation: runLama 30s linear infinite; 
+}
+
+@keyframes runLama {
+    from {
+        top: 15%; 
+        left: 0%; 
+        transform: translateX(-300px);
+    }
+    to  {
+        top: 25%; 
+        right: 0%; 
+        transform: translateX(300px);
+    }
+}
+.puma {
+    position: absolute;
+    bottom: 5%;  
+    left: 76%; 
+}
+.kormoran {
+    position: absolute;
+    bottom: 5%;  
+    left: 85%; 
+  }
+
+#selfie {
+    position: absolute;
+    top: 42%; 
+    left: 55%; 
+    transform: translateY(500px) rotate(-90deg);
+    animation: positionSelfie 4s ease 2s forwards;
+    z-index: 20;
+}
+@keyframes positionSelfie {
+    from {
+        transform: translateY(500px) rotate(-90deg);
+    }
+    to {
+        transform: translateY(0px) rotate(-90deg);
+    }
+}
+
+video {
+    position: absolute;
+    top: 52%; 
+    left: 46%; 
+    height: 400px; 
+    width: 450px; 
+    opacity: 0; 
+    animation: videoShowUp 1s ease 6s forwards;
+    z-index: 30;
+}
+
+@keyframes videoShowUp {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+li {
+    background-color: rgb(249, 184, 64);
+    margin-bottom: 15px; 
+    padding: 5px; 
+    border-radius: 5px;
+    width: 80%; 
+    text-align: center;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 20px; 
+    color: black; 
+}
+
+li:hover {
+    background-color: rgb(247, 214, 153);
+}
+
+#continue {
+    color: dodgerblue; 
+    font-weight: bold;
+}
+#continue:hover {
+    color: orangered; 
+    background-color: rgb(247, 214, 153);
+}
