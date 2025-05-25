@@ -71,7 +71,7 @@ function checkItems() {
         }
         if (goalsCapitalized.length === 0 ) {
             let message =  document.getElementById("message")
-            message.innerHTML = `Please choose at least one travel destination since you're already in Argentina! <br>Slide a destination onto the balloon and then click confirm again.`; 
+            message.innerHTML = `Please choose one travel destination since you're already in Argentina! <br>Slide a destination onto the balloon and then click confirm again.`; 
             message.style.color = "red"; 
         } else {
         

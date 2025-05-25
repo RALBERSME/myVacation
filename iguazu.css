@@ -90,13 +90,13 @@
     }
  }
 
- #continue {
+ .continue {
     padding: 5px 10px; 
     background-color: dodgerblue;
-    color: yellow; 
+    color: yellow !important; 
     border-radius: 5px;
  }
- #continue:hover {
+ .continue:hover {
     color: orangered;
     background-color: rgb(249, 208, 131); 
     border: 2px solid orangered; 

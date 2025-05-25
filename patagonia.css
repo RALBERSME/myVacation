@@ -135,11 +135,11 @@ li:hover {
     background-color: rgb(247, 214, 153);
 }
 
-#continue {
-    color: dodgerblue; 
+.continue {
+    color: darkblue; 
     font-weight: bold;
 }
-#continue:hover {
+.continue:hover {
     color: orangered; 
     background-color: rgb(247, 214, 153);
 }

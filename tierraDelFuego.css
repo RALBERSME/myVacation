@@ -32,7 +32,7 @@ body {
 
     to {
         top: 72%; 
-       left: 85%; 
+       left: 74%; 
         transform: rotateY(2750deg);
     }
 }
@@ -63,7 +63,7 @@ body {
     }
 
     to {
-        top: 76%;  
+        top: 71%;  
         left: 88%; 
         transform: rotateY(2750deg);
     }
@@ -125,16 +125,18 @@ body {
     font-size: 1.5rem; 
 }
 
-#continue {
+#next {
     position: absolute;
-    top:92%; 
-    left: 85%; 
+    top:84%; 
+    left: 80%;     
+}
+.continue {
     text-decoration: none;
     color: gold;  
-    font-size: 1.6rem; 
+    font-size: 1.3rem; 
 }
-#continue:hover {
+.continue:hover {
     cursor: pointer;
     color: dodgerblue;
-    text-decoration: overline; 
+    text-decoration: underline; 
 }

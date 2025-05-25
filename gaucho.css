@@ -29,8 +29,8 @@ h1 {
 }
 .links {
     position: absolute;
-    top: 25%;
-    left: 58%; 
+    top: 22%;
+    left: 55%; 
     width: 20%; 
 }
 .links li {
@@ -113,3 +113,6 @@ h1 {
     top: 30%; 
 }
 
+.continue {
+    color: white !important; 
+}

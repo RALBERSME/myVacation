@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    margin: 2.5%; 
+    margin: 1.5%; 
     height: 90vh; 
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -37,7 +37,7 @@ h2 {
 }
 li {
     list-style: none;
-    margin-bottom: 15px; 
+    margin-bottom: 8.5px; 
     background-color: blanchedalmond;
     border: none; 
     border-radius: 5px; 
@@ -46,14 +46,14 @@ li {
 li a {
     text-decoration: none;
     color: black; 
-    font-size: 1.5rem; 
+    font-size: 1.3rem; 
 }
 
 li:hover {
     cursor: pointer;
     background-color: rgb(247, 198, 125);
 }
-#continue {
+.continue {
     font-weight: bold;
     color: darkblue; 
 }
