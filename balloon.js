@@ -45,8 +45,10 @@ function drag(){
 }
 drag();
 
+
 function checkItems() {
     let goals = [];
+    let goalsNoUndefined = []; 
     let goalsCapitalized =[]; 
     const spans = document.querySelectorAll("span");
     spans.forEach(span =>{
@@ -56,7 +58,11 @@ function checkItems() {
         if (x < 1500) {
             goals.push(span.id)
         }
-        for (let goal of goals) {
+        goalsNoUndefined = goals.filter(function( element ) {
+            return element !== undefined;
+         });
+
+        for (let goal of goalsNoUndefined) {
            const capitalized =
            goal.charAt(0).toUpperCase()
             + goal.slice(1)
@@ -71,7 +77,13 @@ function checkItems() {
         
         let bereinigteReiseziele = [...new Set(goalsCapitalized)];
         let reiseziele = bereinigteReiseziele.join(); 
-        localStorage.setItem("argentina", JSON.stringify(goals));
+
+        // function removeUndefined(data) {
+        //     data.filter(function( element ) {
+        //         return element !== undefined;
+        //      });
+        // }
+        localStorage.setItem("argentina", JSON.stringify(goalsNoUndefined));
                   
         let grammatKorrekt = reiseziele.replaceAll(",", " und "); 
         let message = document.getElementById("message")
