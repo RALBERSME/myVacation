@@ -1,0 +1,115 @@
+* {
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    background: url("https://cdn.pixabay.com/photo/2023/08/07/21/37/mountains-8175997_640.png");
+    background-size: cover;
+   
+}
+.container {
+    margin:1%; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+.top h3 {
+    width: 80%; 
+    font-size: 1.4rem;
+}
+.middle {
+ padding-top: 20%
+
+}
+.links {
+    position: absolute;
+    top: 25%;
+    left: 58%; 
+    width: 20%; 
+}
+.links li {
+    margin-bottom: 5px; 
+    background-color: green;
+    border-radius: 5px; 
+    list-style: none;
+    padding: 5px 15px; 
+    text-align: center;
+}
+.links li a {
+    text-decoration: none;
+    color: yellow; 
+    font-size: 1.4rem;
+}
+.links li:hover {
+    background-color: rgb(6, 177, 212);
+    font-weight: bold;
+}
+.gauchotext {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+.gauchotext h3 {
+    font-size: 1.3rem;
+    width: 95%; 
+}
+#kiss {
+    transform: scale(0.2);
+    animation: kissing 3s ease-in-out forwards; 
+    z-index: 2;
+}
+
+@keyframes kissing {
+    0% {
+        transform: scale(0.2);
+    }
+    25% {
+        transform: scale(1);
+    }
+
+    35% {
+        transform: scale(0.5);
+    }
+    45% {
+        transform: scale(1);
+    }
+    55% {
+        transform: scale(0.5);
+    }
+    65% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.5);
+    }
+    85% {
+        transform: scale(1);
+    }
+     100% {
+        transform: scale(0.43);
+    }
+}
+
+.cow {
+    position: absolute;
+    top: 22%; 
+    left: 20%; 
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.gaucho {
+    position: absolute;
+    right:0; 
+    top: 30%; 
+}
+
