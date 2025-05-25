@@ -1,0 +1,140 @@
+* {
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh; 
+    background: url("https://cdn.pixabay.com/photo/2019/03/22/16/44/ushuaia-4073637_640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: .9rem; 
+    overflow: hidden;
+}
+
+.container {
+    margin: 2.5%; 
+}
+.effects {
+    position: absolute;
+    top: 70%; 
+    left: 5%; 
+    animation: dancing 15s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+@keyframes dancing {
+    from {
+        top: 70%; 
+    left: 5%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 72%; 
+       left: 85%; 
+        transform: rotateY(2750deg);
+    }
+}
+
+#pinguine {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;    
+}
+
+.effects1 {
+    position: absolute;
+    top: 76%; 
+    left: 5%; 
+    animation: dancing1 14s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#beaver {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+}
+@keyframes dancing1 {
+    from {
+    top: 76%; 
+    left: 5%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 76%;  
+        left: 88%; 
+        transform: rotateY(2750deg);
+    }
+}
+
+.effects2 {
+    position: absolute;
+    top: 65%; 
+    left: 5%; 
+    animation: dancing2 16s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#ice {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+}
+@keyframes dancing2 {
+    from {
+        top: 65%; 
+        left: 2%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 70%;   
+        left: 82%; 
+        transform: rotateY(4250deg);
+    }
+}
+.effects3 {
+    position: absolute;
+    top: 62%; 
+    left: 5%; 
+    animation: dancing3 12s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#ushuaia {
+    width: 135px; 
+    height: 135px; 
+    border-radius: 50%; 
+}
+@keyframes dancing3 {
+    from {
+        top: 62%; 
+        left: 2%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 72%;   
+        left: 82%; 
+        transform: rotateY(5250deg);
+    }
+}
+#cta {
+    padding-top: 25%; 
+    color: gold; 
+    font-size: 1.5rem; 
+}
+
+#continue {
+    position: absolute;
+    top:92%; 
+    left: 85%; 
+    text-decoration: none;
+    color: gold;  
+    font-size: 1.6rem; 
+}
+#continue:hover {
+    cursor: pointer;
+    color: dodgerblue;
+    text-decoration: overline; 
+}
