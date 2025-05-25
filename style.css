@@ -136,3 +136,36 @@ p {
       z-index: 100;
     }
   }
+  /* help */
+  .toBoarding {
+    position: absolute;
+    height: 30vh; 
+    top: 30%; 
+    left: 40%; 
+    height: 5%; 
+    z-index: 10;  
+    padding: 5px; 
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    animation: 3s ease-in 20s 1 forwards showUp;
+  }
+
+@keyframes showUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#toBoarding {
+    color: #ddf718;
+    text-decoration: none;
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+#toBoarding:hover {
+    color: #d74279;
+  }
