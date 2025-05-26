@@ -148,7 +148,7 @@ p {
     display: flex;
     opacity: 0;
     justify-content: center;
-    animation: 3s ease-in 20s 1 forwards showUp;
+    animation: 3s ease-in 15s 1 forwards showUp;
   }
 
 @keyframes showUp {

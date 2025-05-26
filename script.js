@@ -22,3 +22,6 @@ allSpans.forEach(span=>{
 
 });
 
+setTimeout(() => {            
+  document.getElementById("toBoarding").classList.remove("hide")
+}, 4000) 
