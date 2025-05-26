@@ -101,7 +101,7 @@ body {
 }
 .effects3 {
     position: absolute;
-    top: 62%; 
+    top: 54%; 
     left: 5%; 
     animation: dancing3 12s ease-in-out infinite; 
     animation-direction: alternate;
@@ -114,15 +114,119 @@ body {
 }
 @keyframes dancing3 {
     from {
-        top: 62%; 
+        top: 54%; 
         left: 2%; 
         transform: rotateY(0deg);
     }
 
     to {
-        top: 69%;   
+        top: 63%;   
         left: 82%; 
         transform: rotateY(5250deg);
+    }
+}
+.effects4 {
+    position: absolute;
+    top: 62%; 
+    left: 4%; 
+    animation: dancing4 6s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#bubble1 {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    box-shadow: rgba(51, 102, 204, 0.17) 0px -23px 25px 0px inset, rgba(51, 102, 204, 0.15) 0px -36px 30px 0px inset, rgba(51, 102, 204, 0.1) 0px -79px 40px 0px inset, rgba(51, 102, 204, 0.06) 0px 2px 1px, rgba(51, 102, 204, 0.09) 0px 4px 2px, rgba(51, 102, 204, 0.09) 0px 8px 4px, rgba(51, 102, 204, 0.09) 0px 16px 8px, rgba(51, 102, 204, 0.09) 0px 32px 16px;  
+}
+@keyframes dancing4 {
+    from {
+        top: 62%; 
+        left: 4%;
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 72%;   
+        left: 80%; 
+        transform: rotateY(3450deg);
+    }
+}
+.effects5 {
+    position: absolute;
+    top: 64%; 
+    left: 4.2%; 
+    animation: dancing5 9s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#bubble2 {
+    width: 90px; 
+    height: 90px; 
+    border-radius: 50%; 
+    box-shadow: rgba(51, 102, 204, 0.17) 0px -23px 25px 0px inset, rgba(51, 102, 204, 0.15) 0px -36px 30px 0px inset, rgba(51, 102, 204, 0.1) 0px -79px 40px 0px inset, rgba(51, 102, 204, 0.06) 0px 2px 1px, rgba(51, 102, 204, 0.09) 0px 4px 2px, rgba(51, 102, 204, 0.09) 0px 8px 4px, rgba(51, 102, 204, 0.09) 0px 16px 8px, rgba(51, 102, 204, 0.09) 0px 32px 16px;  
+}
+@keyframes dancing5 {
+    from {
+        top: 64%; 
+        left: 4.2%;  
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 69%;   
+        left: 83%; 
+        transform: rotateY(3250deg);
+    }
+}
+.effects6 {
+    position: absolute;
+    top: 58%; 
+    left: 5.2%; 
+    animation: dancing6 11s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#bubble3 {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    box-shadow: rgba(51, 102, 204, 0.17) 0px -23px 25px 0px inset, rgba(51, 102, 204, 0.15) 0px -36px 30px 0px inset, rgba(51, 102, 204, 0.1) 0px -79px 40px 0px inset, rgba(51, 102, 204, 0.06) 0px 2px 1px, rgba(51, 102, 204, 0.09) 0px 4px 2px, rgba(51, 102, 204, 0.09) 0px 8px 4px, rgba(51, 102, 204, 0.09) 0px 16px 8px, rgba(51, 102, 204, 0.09) 0px 32px 16px;  
+}
+@keyframes dancing6 {
+    from {
+        top: 58%;
+    left: 5.2%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 60%;   
+        left: 82.5%; 
+        transform: rotateY(1250deg);
+    }
+}
+.effects7 {
+    position: absolute;
+    top: 65%; 
+    left: 5.5%; 
+    animation: dancing7 12s ease-in-out infinite; 
+    animation-direction: alternate;
+}
+#bubble4 {
+    width: 110px; 
+    height: 110px; 
+    border-radius: 50%; 
+    box-shadow: rgba(51, 102, 204, 0.17) 0px -23px 25px 0px inset, rgba(51, 102, 204, 0.15) 0px -36px 30px 0px inset, rgba(51, 102, 204, 0.1) 0px -79px 40px 0px inset, rgba(51, 102, 204, 0.06) 0px 2px 1px, rgba(51, 102, 204, 0.09) 0px 4px 2px, rgba(51, 102, 204, 0.09) 0px 8px 4px, rgba(51, 102, 204, 0.09) 0px 16px 8px, rgba(51, 102, 204, 0.09) 0px 32px 16px;  
+}
+@keyframes dancing7 {
+    from {
+        top: 65%; 
+        left: 5.5%; 
+        transform: rotateY(0deg);
+    }
+
+    to {
+        top: 77.6%;   
+        left: 78.5%; 
+        transform: rotateY(4050deg);
     }
 }
 #cta {

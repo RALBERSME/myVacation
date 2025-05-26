@@ -8,6 +8,7 @@ body {
     height: 100vh; 
     background: url("Images/mountainsDrawing.png");
     background-size: cover;
+    position: relative;
    
 }
 .container {
@@ -116,3 +117,88 @@ h1 {
 .continue {
     color: white !important; 
 }
+
+/* gras */
+
+.grass1 {
+    position: absolute;
+    top: 59.5%; 
+    left: 43%; 
+    z-index: 1;
+    background-color: red;
+    animation: swing 2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  
+  .grass1 i {
+    position: absolute;
+    top: 100%;
+    height: 9vh;
+    width: 5px;
+    background-color: #42e93c;
+    transform-origin: 50% 0%;
+    animation: curl 2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  
+  .grass1 i i {
+    height: 40%;
+  }
+  
+  @keyframes swing {
+    from {
+      transform: rotateZ(20deg);
+    }
+    to {
+      transform: rotateZ(-20deg);
+    }
+  }
+  
+  @keyframes curl {
+    from {
+      transform: rotateZ(25deg);
+    }
+    to {
+      transform: rotateZ(-25deg);
+    }
+  }
+  .grass2 {
+    position: absolute;
+    top: 59.5%; 
+    left: 42%; 
+    z-index: 1;
+    animation: swing2 2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  .grass2 i {
+    position: absolute;
+    top: 100%;
+    height: 9vh;
+    width: 10px;
+    background-color: #8df04b;
+    transform-origin: 50% 0%;
+    animation: curl2 2s ease-in-out infinite;
+    animation-direction: alternate;
+  }
+  
+  .grass2 i i {
+    height: 40%;
+  }
+  
+  @keyframes swing2 {
+    from {
+      transform: rotateZ(15deg);
+    }
+    to {
+      transform: rotateZ(-15deg);
+    }
+  }
+  
+  @keyframes curl2 {
+    from {
+      transform: rotateZ(15deg);
+    }
+    to {
+      transform: rotateZ(-15deg);
+    }
+  }

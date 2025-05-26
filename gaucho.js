@@ -20,9 +20,13 @@ function nextGoal() {
 }
 
 const kiss = document.getElementById("kiss");
-const cow = document.querySelector(".cow"); 
+const cow = document.querySelector(".cow");
+const grass1 = document.querySelector(".grass1");  
+const grass2 = document.querySelector(".grass2"); 
 
 setTimeout(() => {
   kiss.classList.add("hide");
   cow.classList.remove("hide"); 
+  grass1.classList.remove("hide"); 
+  grass2.classList.remove("hide"); 
 }, 3000)
