@@ -101,7 +101,7 @@ h1 {
     position: absolute;
     top: 22%; 
     left: 20%; 
-    z-index: 1;
+    z-index: 5;
 }
 
 .hide {
@@ -122,12 +122,13 @@ h1 {
 
 .grass1 {
     position: absolute;
-    top: 59.5%; 
+    top: 56.5%; 
     left: 43%; 
     z-index: 1;
     background-color: red;
     animation: swing 2s ease-in-out infinite;
     animation-direction: alternate;
+    z-index: 2;
   }
   
   .grass1 i {
@@ -164,11 +165,12 @@ h1 {
   }
   .grass2 {
     position: absolute;
-    top: 59.5%; 
+    top: 56.5%; 
     left: 42.3%; 
     z-index: 1;
     animation: swing2 2s ease-in-out infinite;
     animation-direction: alternate;
+    z-index: 2;
   }
   .grass2 i {
     position: absolute;
