@@ -51,25 +51,29 @@ marquee {
   
   .check {
     background-color: transparent;
-    color: dodgerblue;
-    border: 2px dashed dodgerblue;
+    /* color: dodgerblue;
+    border: 2px dashed dodgerblue; */
+    color: white; 
+    border: 2px dashed white; 
     position: relative;
   }
   
   .check::after {
     content: "";
     position: absolute;
-    width: 0;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    background-color: orangered;
     transition: width 0.3s ease;
     z-index: -1;
   }
   
   .check:hover::after {
-    width: 100%;
+    width: 0%;color: orangered; 
+    border: 2px dashed orangered; 
   }
   
   .check:hover {
